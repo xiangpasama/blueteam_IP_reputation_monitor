@@ -9,6 +9,8 @@
 
 python threatbook_IP_repution_api.py
 
+apikey和ip_list都需要自行填写，apikey = ""，ip_list = [ ]
+
 输出的结果包含ip，ip地理位置，ip威胁情报最后一次更新的时间【按时间排序】，威胁情报来源，威胁情报标签，总体比较直观
 ```
 IP: 45.79.181.251, Carrier: Akamai Technologies, Inc., Country: United States, Province: New Jersey, City: Cedar Knolls
