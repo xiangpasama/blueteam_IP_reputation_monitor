@@ -5,6 +5,8 @@
 
 ## 微步在线的情报API
 
+https://x.threatbook.com/v5/serviceCenter?tab=apiAuth
+
 可以用企业邮箱注册账号，找微步在线销售开通总量1000个的IP分析API，控制台绑定公司出口IP【绑定IP才能使用key】，每月监测一次，一次50个IP，可以用20个月，发现被标记之后自行排查是否有服务器中毒，并向微步在线申请IP加白。
 
 python threatbook_IP_repution_api.py
@@ -59,5 +61,21 @@ IP: 92.255.85.253, Carrier: Chang Way Technologies Co. Limited, Country: Russia,
 ```
 ## 华为云的情报API
 
+https://isecurity.huawei.com/security/service/intelligence
+
+这个是直接爬虫获取结果，华为允许用户每个源IP每天可以访问10次，所以这里脚本每三小时访问一次，每天访问8次，100个IP，需要12.5天获取所有IP信誉，可以通过替换源IP的办法绕过，但是不建议大量调用，不然华为会增加反爬手段，导致调用难度增加。
+
+python huawei_IP_repution_api.py
+
+ip_list = [ ]，自行替换或者添加IP
+
+输出结果包含ip，ip综合情报标签，最近一次情报更新时间。这个和微步在线的存在差异，但是足够满足需要了。
+```
+IP: 45.79.181.251, Result: Malicious
+Latest Last Seen: 2024-09-11 22:27:42
+
+IP: 92.255.85.253, Result: Malicious
+Latest Last Seen: 2024-09-11 11:51:25
+```
 
 
