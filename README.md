@@ -59,7 +59,7 @@ IP: 92.255.85.253, Carrier: Chang Way Technologies Co. Limited, Country: Russia,
 2024-09-12 01:47:17,Open Source ,('Suspicious',)
 2024-09-12 01:50:47,Open Source ,('Suspicious',)
 ```
-## 华为云的情报API
+## 华为的情报API
 
 https://isecurity.huawei.com/security/service/intelligence
 
